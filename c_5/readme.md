@@ -1,20 +1,40 @@
+```c
 #include <stdio.h>
 
 int main(){
-  int a, b;
+  char op;
+  int x, y, result;
 
-  printf("비교할 두 수를 입력하시오: ");
-  scanf("%d %d", &a, &b);
+  printf("수식을 입력하시오(예: 2 + 5) >> ");
+  scanf("%d %c %d", &x, &op, &y);
 
-  if(a > b){
-    printf(">");
+  switch(op){
+    case'+':
+      result = x + y;
+      break;
+
+    case'-':
+      result = x - y;
+      break;
+
+    case'*':
+      result = x * y;
+      break;
+
+    case'/':
+      result = x / y;
+      break;
+
+    case'%':
+      result = x % y;
+      break;
+
+    default:
+      printf("지원되지 않는 연산자입니다.\n");
+      break;
   }
-  else if(a < b){
-    printf("<");
-  }
-  else{
-    printf("=");
-  }
+
+  printf("%d %c %d = %d\n", x, op, y, result);
 
   return 0;
 }
