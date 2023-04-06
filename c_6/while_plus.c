@@ -11,7 +11,7 @@ int main(){
     i++;
   }
 
-  printf("1부터 3까지의 합은 %d 입니다.",sum);
+  printf("1부터 %d까지의 합은 %d 입니다.", n, sum);
   
   return 0;
 }
