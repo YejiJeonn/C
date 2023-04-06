@@ -1,3 +1,5 @@
+//do-while문 응용1
+
 #include <stdio.h>
 
 int main(){
