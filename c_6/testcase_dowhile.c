@@ -1,3 +1,5 @@
+//더하기 반복문 _ do while문
+
 #include <stdio.h>
 
 int main(){
