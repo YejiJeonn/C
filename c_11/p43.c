@@ -19,7 +19,6 @@ int main(){
     }
     if(count==2){
       printf("%d ",i);
-      count = 0;
     }
     count = 0;
   }
