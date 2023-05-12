@@ -1,4 +1,5 @@
 // 기타 함수 출력
+
 #include <stdio.h>
 #include <stdlib.h>
 
