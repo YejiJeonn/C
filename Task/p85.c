@@ -26,7 +26,7 @@ int arr[20];
 bool visited_ncr[20];
 int ncr, M;
 
-// 메뉴 출력 후 선택되는 값에 따라 함수 호출
+
 int main(){
 
   while(1){
@@ -75,7 +75,6 @@ int main(){
 }
 
 
-// 메뉴 
 int menu(){
   int n;
 
@@ -97,6 +96,7 @@ int menu(){
 int factorial(){
   int i, start, end, temp=0;
 
+  printf("1번 팩토리얼 함수\n");
   printf("시작할 수와 끝날 수를 입력하세요 : ");
   scanf("%d %d", &start, &end);
 
@@ -118,6 +118,7 @@ int factorial(){
 int sine(){
   double num;
 
+  printf("2번 사인 함수\n");
   printf("수를 입력하세요 : ");
   scanf("%lf", &num);
 
@@ -133,6 +134,7 @@ int sine(){
 int loge(){
   double num;
 
+  printf("3번 로그 함수\n");
   printf("수를 입력하세요 : ");
   scanf("%lf", &num);
 
@@ -148,6 +150,7 @@ int loge(){
 int sqrte(){
   double num;
 
+  printf("4번 제곱근 함수\n");
   printf("수를 입력하세요 : ");
   scanf("%lf", &num);
 
@@ -163,6 +166,7 @@ int sqrte(){
 //5. 순열 함수
 int nPr(){
 
+  printf("5번 순열 함수\n");
   printf("수를 입력하세요: ");
   scanf("%d", &npr);
   
@@ -190,6 +194,8 @@ void real_npr(int x){
 
 // 6. 조합 함수
 int nCr(){
+
+  printf("6번 조합 함수\n");
   printf("한자리 수를 두개 입력하세요: ");
   scanf("%d %d", &ncr, &M);
 	real_ncr(0,0);
