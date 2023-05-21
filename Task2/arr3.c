@@ -1,23 +1,21 @@
-// 배열 짝수자리에는 짝수, 홀수자리에는 홀수 위치하도록
-
 #include <stdio.h>
 
-int main(){
-  int arr[10]={1,2,3,4,5,6,7,8,9,10};
-  int arr2[10];
+int main(void) {
+  int num = 0;
+  int arr1[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  int arr2[10] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 
-  for(int i=0; i<10; i++){
-    if(i%2==0){
-      arr2[i] = arr[i+1];
+  for (int i = 0; i < 10; i++) {
+    if (i % 2 == 0) {
+      num = arr1[i];
+      arr1[i] = arr2[i];
+      arr2[i] = num;
+    } else if (i % 2 != 0) {
+      num = arr1[i];
+      arr1[i] = arr2[i];
+      arr2[i] = num;
     }
-    else if(i%2 != 0){
-      arr2[i] = arr[i-1];
-    }
+    printf("arr1[%d] = %d   arr2[%d] = %d\n", i, arr1[i], i, arr2[i]);
   }
-
-  for(int i=0; i<10; i++){
-    printf("%d ", arr2[i]);
-  }
-  
   return 0;
 }
